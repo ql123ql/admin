@@ -6,6 +6,8 @@ use backend\models\Brand;
 use yii\data\Pagination;
 use yii\web\Request;
 use yii\web\UploadedFile;
+use flyok666\uploadifive\UploadAction;
+use flyok666\qiniu\Qiniu;
 
 class BrandController extends \yii\web\Controller
 {
@@ -19,12 +21,12 @@ class BrandController extends \yii\web\Controller
         $query=Brand::find()->where(['!=','status','-1']) ->orderBy('sort');
         //总条数
         $total = $query->count();
-        //每页显示条数 2
-        $perPage = 2;
+        //每页显示条数 3
+        $perPage = 3;
         // 初始化分页
         $pager=new Pagination([
             'totalCount'=>$total,
-            'defaultPageSize'=>$perPage
+            'defaultPageSize'=>$perPage,
         ]);
         //查询所有的品牌数据
         $brands=$query->limit($pager->limit)->offset($pager->offset)->all();
@@ -120,9 +122,9 @@ class BrandController extends \yii\web\Controller
         return $this->render("add",["model"=>$model]);
     }
 
-    //删除
+    //逻辑删除
     public function actionDel($id){
-        //得到品牌对象
+        //根据id查出对应的数据将其修改为删除状态
         $model=Brand::findOne(["id"=>$id]);
         $model->status=-1;
         $model->save(false);
@@ -131,4 +133,111 @@ class BrandController extends \yii\web\Controller
         return $this->redirect(["brand/index"]);
     }
 
+//upload插件
+    public function actions() {
+        return [
+            's-upload' => [
+                'class' => UploadAction::className(),
+                'basePath' => '@webroot/upload',
+                'baseUrl' => '@web/upload',
+                'enableCsrf' => true, // default
+                'postFieldName' => 'Filedata', // default
+                //BEGIN METHOD*/
+/*                'format' => [$this, 'methodName'],
+                //END METHOD
+                //BEGIN CLOSURE BY-HASH
+                'overwriteIfExist' => true,
+                'format' => function (UploadAction $action) {
+                    $fileext = $action->uploadfile->getExtension();
+                    $filename = sha1_file($action->uploadfile->tempName);
+                    return "{$filename}.{$fileext}";
+                },*/
+                //END CLOSURE BY-HASH
+                //BEGIN CLOSURE BY TIME
+                'format' => function (UploadAction $action) {
+                    $fileext = $action->uploadfile->getExtension();
+                    $filehash = sha1(uniqid() . time());
+                    $p1 = substr($filehash, 0, 2);
+                    $p2 = substr($filehash, 2, 2);
+                    return "{$p1}/{$p2}/{$filehash}.{$fileext}";
+                },
+                //END CLOSURE BY TIME
+                'validateOptions' => [
+                    'extensions' => ['jpg', 'png'],
+                    'maxSize' => 1 * 1024 * 1024, //file size
+                ],
+                'beforeValidate' => function (UploadAction $action) {
+                    //throw new Exception('test error' );
+                },
+                'afterValidate' => function (UploadAction $action) {},
+                'beforeSave' => function (UploadAction $action) {},
+                'afterSave' => function (UploadAction $action) {
+                   // $action->output['fileUrl'] = $action->getWebUrl();//输出文件的相对路径
+/*                    $action->getFilename(); // "image/yyyymmddtimerand.jpg"
+                    $action->getWebUrl(); //  "baseUrl + filename, /upload/image/yyyymmddtimerand.jpg"
+                    $action->getSavePath();*/ // "/var/www/htdocs/upload/image/yyyymmddtimerand.jpg"
+
+                //将图片上传到七牛运
+                    //实例化七牛运
+                    $qiniu = new Qiniu(\yii::$app->params['qiniu']);
+                    //调用上传方法（文件绝对路径，名称）
+                    $qiniu->uploadFile(
+                        $action->getSavePath(),$action->getWebUrl()
+                    );
+                        //得到七牛运的地址
+                    $url = $qiniu->getLink($action->getWebUrl());
+                    //输出七牛运
+                    $action->output['fileUrl'] =$url ;
+                },
+            ],
+        ];
+    }
+
+    //测试七牛运文件上传
+    public function actionQiniu()
+    {
+
+        $config = [
+            'accessKey'=>'xCWkJrfaeXvST3sd7JJkNQp1rLEKy7AJKlLFWq4o',
+            'secretKey'=>'JGN6HOJtw3vqi9s99Es8MXoQB7xlCs158OXfRD6m',
+            'domain'=>'http://otc6tqfdn.bkt.clouddn.com/',
+            'bucket'=>'yiishop',
+            'area'=>Qiniu::AREA_HUADONG
+        ];
+
+
+
+        $qiniu = new Qiniu($config);
+        $key = '/upload/5c/41/111.jpg';
+
+        //将图片上传到七牛运
+        $qiniu->uploadFile(\yii::getAlias('@webroot').'/upload/5c/41/111.jpg',$key);
+
+        //获取该图片在七牛运的地址
+        $url = $qiniu->getLink($key);
+        var_dump($url);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

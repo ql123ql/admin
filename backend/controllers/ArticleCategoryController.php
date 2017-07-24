@@ -33,7 +33,7 @@ class ArticleCategoryController extends \yii\web\Controller
     public function actionAdd(){
         //实例化文章分类
         $model=new ArticleCategory();
-        // //实例化请求
+        // 实例化请求
         $request=new Request();
         //如果是post提交
         if($request->isPost){
@@ -76,8 +76,8 @@ class ArticleCategoryController extends \yii\web\Controller
                 return $this->redirect(["article-category/index"]);
             }
         }
-//        //初始化状态
-//        $model->status=1;
+          //初始化状态
+             // $model->status=1;
         //加载文章分类添加页面
         return $this->render("add",["model"=>$model]);
 
@@ -87,9 +87,9 @@ class ArticleCategoryController extends \yii\web\Controller
         //得到文章对象
         $model=ArticleCategory::findOne(["id"=>$id]);
         $model->status=-1;
-        $model->save(false);
+        $model->save();
         //提示
-        \Yii::$app->session->setFlash("danger","删除删除成功");
+        \Yii::$app->session->setFlash("danger","删除文章分类成功");
         return $this->redirect(["article-category/index"]);
     }
 }

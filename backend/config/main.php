@@ -11,6 +11,12 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    //设置语言
+    'language'=>'zh-CN',
+    //修改默认路由
+    'defaultRoute'=>'brand/index',
+    //修改默认布局文件
+    //'layout'=>false,
     'modules' => [],
     'components' => [
         'request' => [

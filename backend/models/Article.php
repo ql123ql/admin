@@ -58,6 +58,7 @@ class Article extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    //规则
     public function rules()
     {
         return [
@@ -68,16 +69,19 @@ class Article extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
+    //对应关系
+//    public function getArticle(){
+//        return $this->hasOne(Article::className(),['id'=>'article_id']);
+//    }
+
+    //属性名称
     public function attributeLabels()
     {
         return [
             'id' => '文章ID',
             'name' => '文章名称',
             'intro' => '简介',
-            'article_category_id' => '文章分类id',
+            'article_category_id' => '文章分类',
             'sort' => '排序',
             'status' => '状态',
             'create_time' => '创建时间',

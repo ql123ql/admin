@@ -1,13 +1,4 @@
-
-<!--1
-1.完成用户注册功能(使用admin表),需要验证码,用户头像,姓名,年龄,性别...
-2.完成用户(admin)登录功能
-3.添加TestController,和4个操作add edit index del.
-使用ACF过滤器设置权限,只有登录用户才可以执行add edit del操作
-,登录和未登录用户都可以执行index操作
-
--->
-<?=\yii\bootstrap\Html::a("添加",["article-category/add"],["class"=>"btn btn-info btn-sm"])?>
+<?=\yii\bootstrap\Html::a("添加文章分类",["article-category/add"],["class"=>"btn btn-info btn-sm"])?>
 <table class="table table-bordered table-condensed">
     <tr>
         <th>ID</th>

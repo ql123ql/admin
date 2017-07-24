@@ -48,11 +48,11 @@ class Brand extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [["name","intro",'sort','status'],"required","message"=>"{attribute}不能为空"],
+            [["name","intro",'sort','status','logo'],"required","message"=>"{attribute}不能为空"],
             [['intro'], 'string'],
             [['sort', 'status'], 'integer'],
             [['name'], 'string', 'max' => 50],
-            ['imgFile','file','extensions'=>['jpg','png','gif']],
+           /* ['imgFile','file','extensions'=>['jpg','png','gif']],*/
         ];
     }
 
