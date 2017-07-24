@@ -1,0 +1,1097 @@
+2017-07-24 16:26:28 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\helpers\BaseFileHelper.php:287
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-24 16:25:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/add'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '544'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Fadd'
+    'QUERY_STRING' => 'r=goods%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55136'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Findex&SearchForm%5Bname%5D=&SearchForm%5Bsn%5D='
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500884757.7532
+    'REQUEST_TIME' => 1500884757
+]
+2017-07-24 16:49:04 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\phpStudy\WWW\admin\backend\views\goods\sel.php:15
+Stack trace:
+#0 D:\phpStudy\WWW\admin\backend\views\goods\sel.php(15): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'D:\\phpStudy\\WWW...', 15, Array)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\View.php(328): require('D:\\phpStudy\\WWW...')
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(backend\controllers\GoodsController))
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('sel', Array, Object(backend\controllers\GoodsController))
+#5 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(212): yii\base\Controller->render('sel', Array)
+#6 [internal function]: backend\controllers\GoodsController->actionSel('1')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('sel', Array)
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/sel', Array)
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-24 16:49:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/sel'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1940'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Fsel&id=1'
+    'QUERY_STRING' => 'r=goods%2Fsel&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57330'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Findex&SearchForm%5Bname%5D=&SearchForm%5Bsn%5D='
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500886143.4316
+    'REQUEST_TIME' => 1500886143
+]
+2017-07-24 16:53:46 [127.0.0.1][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'backend\models\GoodsDayCount does not have a primary key. You should either define a primary key for the corresponding table or override the primaryKey() method.' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1099
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\BaseActiveRecord.php(758): yii\db\BaseActiveRecord->getOldPrimaryKey(true)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveRecord.php(570): yii\db\BaseActiveRecord->updateInternal(NULL)
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\BaseActiveRecord.php(637): yii\db\ActiveRecord->update(true, NULL)
+#3 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(69): yii\db\BaseActiveRecord->save()
+#4 [internal function]: backend\controllers\GoodsController->actionAdd()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('add', Array)
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/add', Array)
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+)
+
+2017-07-24 16:53:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/add'
+]
+
+$_POST = [
+    '_csrf-backend' => 'aHRGRDF2LjE4DCoVXz54ZQ8OKD1lA1oGBEcOPlU5SUgDQjIdX1sYbg=='
+    'Goods' => [
+        'name' => 'å°å“‘é“ƒ'
+        'logo' => ''
+        'goods_category_id' => '49'
+        'brand_id' => '2'
+        'market_price' => '123123'
+        'shop_price' => '123123'
+        'stock' => '123'
+        'is_on_sale' => '1'
+        'status' => '1'
+        'sort' => '1233'
+    ]
+    'test' => ''
+    'GoodsIntro' => [
+        'content' => '<p>123123123</p>'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2000'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Fadd'
+    'QUERY_STRING' => 'r=goods%2Fadd'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57459'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Fadd'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://admin.yiishop.com'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '434'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500886425.3727
+    'REQUEST_TIME' => 1500886425
+]
+2017-07-24 17:31:15 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#11 [internal function]: backend\controllers\GoodsController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#8 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#9 [internal function]: backend\controllers\GoodsController->actionIndex()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2017-07-24 17:31:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Findex'
+    'QUERY_STRING' => 'r=goods%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60667'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Fadd'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888672.9513
+    'REQUEST_TIME' => 1500888672
+]
+2017-07-24 17:31:27 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#11 [internal function]: backend\controllers\GoodsController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#8 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#9 [internal function]: backend\controllers\GoodsController->actionIndex()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2017-07-24 17:31:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Findex'
+    'QUERY_STRING' => 'r=goods%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60674'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Fadd'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888684.7676
+    'REQUEST_TIME' => 1500888684
+]
+2017-07-24 17:31:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(91): yii\db\ActiveQuery->all()
+#10 [internal function]: backend\controllers\GoodsController->actionAdd()
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(91): yii\db\ActiveQuery->all()
+#8 [internal function]: backend\controllers\GoodsController->actionAdd()
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-24 17:31:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/add'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Fadd'
+    'QUERY_STRING' => 'r=goods%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60679'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888706.4739
+    'REQUEST_TIME' => 1500888706
+]
+2017-07-24 17:33:23 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(91): yii\db\ActiveQuery->all()
+#10 [internal function]: backend\controllers\GoodsController->actionAdd()
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(91): yii\db\ActiveQuery->all()
+#8 [internal function]: backend\controllers\GoodsController->actionAdd()
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-24 17:33:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/add'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Fadd'
+    'QUERY_STRING' => 'r=goods%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60690'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://admin.yiishop.com/index.php?r=goods%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888801.618
+    'REQUEST_TIME' => 1500888801
+]
+2017-07-24 17:34:09 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#12 D:\phpStudy\WWW\admin\backend\controllers\BrandController.php(23): yii\db\Query->count()
+#13 [internal function]: backend\controllers\BrandController->actionIndex()
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\BrandController.php(23): yii\db\Query->count()
+#11 [internal function]: backend\controllers\BrandController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-07-24 17:34:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60714'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888847.1871
+    'REQUEST_TIME' => 1500888847
+]
+2017-07-24 17:34:31 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#11 [internal function]: backend\controllers\GoodsController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(431): yii\db\Command->queryScalar()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#8 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(40): yii\db\Query->count()
+#9 [internal function]: backend\controllers\GoodsController->actionIndex()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#16 {main}
+Additional Information:
+
+2017-07-24 17:34:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Findex'
+    'QUERY_STRING' => 'r=goods%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60720'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500888869.6702
+    'REQUEST_TIME' => 1500888869
+]
+2017-07-24 17:36:43 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#12 D:\phpStudy\WWW\admin\backend\controllers\BrandController.php(23): yii\db\Query->count()
+#13 [internal function]: backend\controllers\BrandController->actionIndex()
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\BrandController.php(23): yii\db\Query->count()
+#11 [internal function]: backend\controllers\BrandController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-07-24 17:36:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'brand/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=brand%2Findex'
+    'QUERY_STRING' => 'r=brand%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60781'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500889001.3341
+    'REQUEST_TIME' => 1500889001
+]
+2017-07-24 17:39:23 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#12 D:\phpStudy\WWW\admin\backend\controllers\ArticleController.php(19): yii\db\Query->count()
+#13 [internal function]: backend\controllers\ArticleController->actionIndex()
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#17 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#18 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(871): yii\db\Command->getRawSql()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(436): yii\db\Command->queryScalar()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#10 D:\phpStudy\WWW\admin\backend\controllers\ArticleController.php(19): yii\db\Query->count()
+#11 [internal function]: backend\controllers\ArticleController->actionIndex()
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-07-24 17:39:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1964'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=article%2Findex'
+    'QUERY_STRING' => 'r=article%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60806'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500889160.9922
+    'REQUEST_TIME' => 1500889160
+]
+2017-07-24 17:40:49 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#8 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(45): yii\db\ActiveQuery->all()
+#10 [internal function]: backend\controllers\GoodsController->actionIndex()
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+' in D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#6 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 D:\phpStudy\WWW\admin\backend\controllers\GoodsController.php(45): yii\db\ActiveQuery->all()
+#8 [internal function]: backend\controllers\GoodsController->actionIndex()
+#9 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\admin\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\phpStudy\WWW\admin\backend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-24 17:40:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_\";}'
+    'advanced-backend' => 'vfoi3pqpuanf61m7udhs9paa82'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\;C:\\Program Files\\Samsung\\AllShare Framework DMS\\1.3.18\\64bit\\;d:\\Program Files\\Git\\cmd;D:\\Program Files\\TortoiseGit\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\samsung-pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1964'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=goods%2Findex'
+    'QUERY_STRING' => 'r=goods%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60819'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/admin/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW/admin/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'admin.yiishop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_COOKIE' => '_csrf-backend=8ec95dca5966fb747ca15e2db0d6eb8e9ba80b1462532c67fc0e4d85325d43eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22PxlQnHVTgznyTut7l3HzdOgyk6tYn-6_%22%3B%7D; advanced-backend=vfoi3pqpuanf61m7udhs9paa82'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'admin.yiishop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1500889247.4585
+    'REQUEST_TIME' => 1500889247
+]
