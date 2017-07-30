@@ -3,6 +3,7 @@
 namespace backend\controllers;
 
 use backend\models\ArticleCategory;
+use backend\filters\RbacFilter;
 use yii\data\Pagination;
 use yii\web\Request;
 
@@ -91,5 +92,14 @@ class ArticleCategoryController extends \yii\web\Controller
         //提示
         \Yii::$app->session->setFlash("danger","删除文章分类成功");
         return $this->redirect(["article-category/index"]);
+    }
+
+    public function behaviors()
+    {
+        return [
+            'rbac'=>[
+                'class'=>RbacFilter::className(),
+            ]
+        ];
     }
 }

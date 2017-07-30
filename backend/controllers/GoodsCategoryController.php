@@ -8,6 +8,7 @@ use yii\web\HttpException;
 use yii\helpers\ArrayHelper;
 use yii\web\NotFoundHttpException;
 use backend\models\GoodsCategory;
+use backend\filters\RbacFilter;
 
 class GoodsCategoryController extends \yii\web\Controller
 {
@@ -119,6 +120,14 @@ class GoodsCategoryController extends \yii\web\Controller
         //删除节点
        // $cate=GoodsCategory::findOne(['id'=>21])->delete();
         //echo 'OK';
+    }
+    public function behaviors()
+    {
+        return [
+            'rbac'=>[
+                'class'=>RbacFilter::className(),
+            ]
+        ];
     }
 
 }

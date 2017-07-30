@@ -14,7 +14,7 @@ return [
     //设置语言
     'language'=>'zh-CN',
     //修改默认路由
-    'defaultRoute'=>'brand/index',
+    'defaultRoute'=>'admin/index',
     //修改默认布局文件
     //'layout'=>false,
     'modules' => [],
@@ -23,7 +23,7 @@ return [
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => \backend\models\Admin::className(),
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],

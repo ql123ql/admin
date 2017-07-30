@@ -5,26 +5,13 @@ namespace backend\models;
 use Yii;
 use yii\helpers\ArrayHelper;
 
-/**
- * This is the model class for table "article".
- *
- * @property string $id
- * @property string $name
- * @property string $intro
- * @property integer $article_category_id
- * @property integer $sort
- * @property integer $status
- * @property integer $create_time
- */
 class Article extends \yii\db\ActiveRecord
 {
     //定义状态
     private  $status_options=[
         -1=>"删除" , 0=>"隐藏", 1=>"正常"
     ];
-    /**
-     * @inheritdoc
-     */
+
     public static function tableName()
     {
         return 'article';
@@ -55,9 +42,7 @@ class Article extends \yii\db\ActiveRecord
         }
         return '未知';
     }
-    /**
-     * @inheritdoc
-     */
+
     //规则
     public function rules()
     {
@@ -87,4 +72,5 @@ class Article extends \yii\db\ActiveRecord
             'create_time' => '创建时间',
         ];
     }
+
 }

@@ -4,16 +4,7 @@ namespace backend\models;
 
 use Yii;
 
-/**
- * This is the model class for table "brand".
- *
- * @property string $id
- * @property string $name
- * @property string $intro
- * @property string $logo
- * @property integer $sort
- * @property integer $status
- */
+
 class Brand extends \yii\db\ActiveRecord
 {
     //保存文件上传对象
@@ -34,17 +25,12 @@ class Brand extends \yii\db\ActiveRecord
         }
         return $options;
     }
-    /**
-     * @inheritdoc
-     */
+
     public static function tableName()
     {
         return 'brand';
     }
 
-    /**
-     * @inheritdoc
-     */
     public function rules()
     {
         return [
@@ -56,9 +42,6 @@ class Brand extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
     public function attributeLabels()
     {
         return [
@@ -77,4 +60,5 @@ class Brand extends \yii\db\ActiveRecord
         }
         return '未知';
     }
+
 }

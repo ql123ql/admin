@@ -14,6 +14,7 @@ use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
 use yii\web\NotFoundHttpException;
 use yii\web\Request;
+use backend\filters\RbacFilter;
 
 class GoodsController extends \yii\web\Controller
 {
@@ -209,6 +210,9 @@ class GoodsController extends \yii\web\Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'rbac'=>[
+                'class'=>RbacFilter::className(),
+            ]
         ];
     }
 

@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use backend\models\Article;
 use backend\models\ArticleDetail;
+use backend\filters\RbacFilter;
 use yii\data\Pagination;
 use yii\web\Request;
 
@@ -106,5 +107,13 @@ class ArticleController extends \yii\web\Controller
         //提示
         \Yii::$app->session->setFlash("danger","文章删除成功");
         return $this->redirect(["article/index"]);
+    }
+    public function behaviors()
+    {
+        return [
+            'rbac'=>[
+                'class'=>RbacFilter::className(),
+            ]
+        ];
     }
 }
